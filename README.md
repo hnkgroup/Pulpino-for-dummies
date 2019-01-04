@@ -7,14 +7,20 @@
 ```bash
 $ sudo apt install python-yaml
 ```
-## Cloning
+## Cloning repo
+either with ssh
 ```bash
 $ git clone git@github.com:hnkgroup/Pulpino-for-dummies.git
-$ git submodule update --init
 ```
-Cloning ips in pulpino. TL;DR
+or just https (no ssh)
 ```bash
-$cd pulpino && ./update-ips.py
+$ git clone https://github.com/hnkgroup/Pulpino-for-dummies.git
+```
+then update submodule & cloning ips in pulpino. TL;DR
+```bash
+$ cd Pulpino-for-dummies
+$ git submodule update --init
+$ cd pulpino && ./update-ips.py
 ```
 ## Building
 Open Vivado Project in ***fpga***
