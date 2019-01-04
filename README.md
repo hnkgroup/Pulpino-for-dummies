@@ -12,5 +12,9 @@ $ sudo apt install python-yaml
 $ git clone git@github.com:hnkgroup/Pulpino-for-dummies.git
 $ git submodule update --init
 ```
+Cloning ips in pulpino. TL;DR
+```bash
+$cd pulpino && ./update-ips.py
+```
 ## Building
 Open Vivado Project in ***fpga***
