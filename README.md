@@ -7,6 +7,10 @@
 ```bash
 $ sudo apt install python-yaml
 ```
+* Windows 10
+```bash
+C:\python27-x64\Scripts> pip install pyyaml
+```
 ## Cloning repo
 either with ssh
 ```bash
