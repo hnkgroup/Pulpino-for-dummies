@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jan  5 18:08:52 2019
+# Process ID: 24692
+# Current directory: /home/kle/iBox/pr/pulp/Pulpino-for-dummies/fpga/arty
+# Command line: vivado arty.xpr
+# Log file: /home/kle/iBox/pr/pulp/Pulpino-for-dummies/fpga/arty/vivado.log
+# Journal file: /home/kle/iBox/pr/pulp/Pulpino-for-dummies/fpga/arty/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project arty.xpr
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210319A2871DA]
+set_property PARAM.FREQUENCY 5000000 [get_hw_targets */xilinx_tcf/Digilent/210319A2871DA]
+open_hw_target
+set_property PROGRAM.FILE {/home/kle/iBox/pr/pulp/Pulpino-for-dummies/fpga/arty/arty.runs/impl_1/pulpemu_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/kle/iBox/pr/pulp/Pulpino-for-dummies/fpga/arty/arty.runs/impl_1/pulpemu_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

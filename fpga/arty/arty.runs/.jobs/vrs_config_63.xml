@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="/home/kle/iBox/pr/pulp/pulpino/fpga/arty/arty.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="xilinx_mem_8192x32_synth_1" LaunchDir="/home/kle/iBox/pr/pulp/pulpino/fpga/arty/arty.runs/xilinx_mem_8192x32_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/kle/iBox/pr/pulp/pulpino/fpga/arty/arty.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="xilinx_mem_8192x32_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/kle/iBox/pr/pulp/pulpino/fpga/arty/arty.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="xilinx_mem_8192x32_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
